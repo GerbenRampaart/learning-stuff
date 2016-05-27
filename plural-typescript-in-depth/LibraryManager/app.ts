@@ -1,32 +1,47 @@
-
-/**
- * (description)
- * 
- * @class SayHello
- */
-class SayHello {
-    /**
-     * Creates an instance of SayHello.
-     * 
-     * @param {string} value (description)
-     */
-    constructor(public value: string) {
-        
-        
-    }
+function GetAllBooks() {
     
-    /**
-     * (description)
-     */
-    Say() {
-        console.log("Hello " + this.value);
-    }
+    let books = [
+        {
+            title: 'Ulysses',
+            author: 'James Joyce',
+            available: true
+        },
+        {
+            title: 'A Farewell to Arms',
+            author: 'Ernest Hemingway',
+            available: false
+        },
+        {
+            title: 'I know Why the Caged Bird Sings',
+            author: 'Maya Angelou',
+            available: true
+        },
+        { 
+            title: 'Moby Dick', 
+            author: 'Herman Melville', 
+            available: true 
+        }
+    ];
     
-    Test() : number {
-        return 123;
-    }
+    return books;
 }
 
-var hw = new SayHello("World");
+function LogFirstAvailable(books) : void {
+    
+    let numberOfBooks : number = books.length;
+    let firstAvailable : string = '';
 
-hw.Say();
+    for(let currentBook of books) {
+        
+        if(currentBook.available) {
+            firstAvailable = currentBook.title;
+            break;
+        }
+    }
+    
+    console.log('Total Books: ' + numberOfBooks);
+    console.log('First Available: ' + firstAvailable);
+}
+
+const allBooks = GetAllBooks();
+LogFirstAvailable(allBooks);
