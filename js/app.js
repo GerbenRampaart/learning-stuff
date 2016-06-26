@@ -32,6 +32,7 @@ function GetAllBooks() {
     return books;
 }
 function LogFirstAvailable(books) {
+    if (books === void 0) { books = GetAllBooks(); }
     var numberOfBooks = books.length;
     var firstAvailable = '';
     for (var _i = 0, books_1 = books; _i < books_1.length; _i++) {
@@ -88,6 +89,7 @@ function CreateCustomer(name, age, city) {
     }
 }
 // ******************************
+L;
 CreateCustomer('name1');
 CreateCustomer('name2', 34);
 CreateCustomer('name3', 56, 'Roosendaal');

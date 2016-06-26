@@ -33,7 +33,7 @@ function GetAllBooks() {
     return books;
 }
  
-function LogFirstAvailable(books) : void {
+function LogFirstAvailable(books = GetAllBooks()) : void {
     
     let numberOfBooks : number = books.length;
     let firstAvailable : string = '';
@@ -96,6 +96,8 @@ function CreateCustomer(name: string, age?: number, city?: string) : void {
 }
 
 // ******************************
+
+L
 
 CreateCustomer('name1');
 CreateCustomer('name2', 34);
