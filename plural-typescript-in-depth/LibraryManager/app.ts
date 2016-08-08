@@ -97,7 +97,7 @@ function CreateCustomer(name: string, age?: number, city?: string) : void {
 
 // ******************************
 
-L
+
 
 CreateCustomer('name1');
 CreateCustomer('name2', 34);
