@@ -1,0 +1,12 @@
+{
+  "resolution": "main",
+  "tree": {
+    "src": "https://raw.githubusercontent.com/felixfbecker/typed-body-parser/966acc8e2339e35e279222f31d3f3b38498bc0ad/typings.json",
+    "raw": "registry:npm/body-parser#1.15.2+20160810230825",
+    "main": "index.d.ts",
+    "version": "1.15.2",
+    "global": false,
+    "name": "body-parser",
+    "type": "typings"
+  }
+}
